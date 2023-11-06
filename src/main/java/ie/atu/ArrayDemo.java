@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class ArrayDemo {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int[] anArray;
         anArray = new int[10];
 
@@ -32,9 +31,13 @@ public class ArrayDemo {
         System.out.println("Element at index 8: " + anArray[8]);
         System.out.println("Element at index 9: " + anArray[9]);
 
-
-
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter a value for the 10th array: ");
+            anArray[10] = scanner.nextInt();
+        } catch (Exception e) {
+            System.out.println("anArray[10] is defined, ");
+        }
 
     }
-
 }
