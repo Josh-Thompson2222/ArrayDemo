@@ -36,3 +36,11 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Machine Learning Models ###
+# Model checkpoint directory
+model_checkpoints/
+# Saved model files
+*.h5
+*.keras
+final_trained_model.*
